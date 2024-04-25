@@ -1,0 +1,60 @@
+
+general:
+  UNAUTHORIZED:
+    invalid_access_key:
+      key: general.UNAUTHORIZED.invalid_access_key
+      code: 'invalid_access_key'
+      message: 'Se proporcionó una clave de acceso API no válida.'
+      message_eng: 'An invalid API access key was supplied.'
+      status: 401
+    missing_access_key:
+      key: general.UNAUTHORIZED.missing_access_key
+      code: 'UNAUTHORIZED'
+      message: 'No se proporcionó ninguna clave de acceso a la API.'
+      message_eng: 'No API access key was supplied.'
+      status: 401
+    inactive_user:
+      key: general.UNAUTHORIZED.inactive_user
+      code: 'UNAUTHORIZED'
+      message: 'La cuenta de usuario proporcionada está inactiva.'
+      message_eng: 'The given user account is inactive.'
+      status: 401
+  FORBIDDEN:
+    https_access_restricted:
+      code: 'FORBIDDEN'
+      message: 'HTTPS access is not supported on the current subscription plan.'
+      message_eng: 'HTTPS access is not supported on the current subscription plan.'
+      status: 403
+    function_access_restricted:
+      code: 'FORBIDDEN'
+      message: 'The given API endpoint is not supported on the current subscription plan.'
+      message_eng: 'The given API endpoint is not supported on the current subscription plan.'
+      status: 403
+  NOT_FOUND:
+    invalid_api_function:
+      code: 'NOT_FOUND'
+      message: 'The given API endpoint does not exist.'
+      message_eng: 'The given API endpoint does not exist.'
+      status: 404
+    not_found:
+      code: 'NOT_FOUND'
+      message: 'Resource not found.'
+      message_eng: 'Resource not found.'
+      status: 404
+  TOO_MANY_REQUESTS:
+    usage_limit_reached:
+      code: 'TOO_MANY_REQUESTS'
+      message: 'The given user account has reached its monthly allowed request volume.'
+      message_eng: 'The given user account has reached its monthly allowed request volume.'
+      status: 429
+    rate_limit_reached:
+      code: 'TOO_MANY_REQUESTS'
+      message: 'The given user account has reached the rate limit.'
+      message_eng: 'The given user account has reached the rate limit.'
+      status: 429
+  INTERNAL_SERVER_ERROR:
+    internal_error:
+      code: 'INTERNAL_SERVER_ERROR'
+      message: 'An internal error occurred.'
+      message_eng: 'An internal error occurred.'
+      status: 500
