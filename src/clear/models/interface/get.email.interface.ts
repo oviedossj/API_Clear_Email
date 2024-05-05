@@ -1,0 +1,1 @@
+export type IEmailsIds = { id: string, threadId: string }
